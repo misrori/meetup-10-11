@@ -2,7 +2,7 @@
 library(rvest)
 # it is not working 403
 # t <- read_html('https://www.pexels.com/search/dog/')
-# open the site, schroll down a lot, save the html.
+# open the site, scroll down a lot, save the html.
 
 # Pexels birds
 t <- read_html('pexels_birds.html')
