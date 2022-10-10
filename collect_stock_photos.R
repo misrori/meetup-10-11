@@ -16,7 +16,7 @@ for (i in 1:10) {
   tryCatch({
     extension <- tail(strsplit(links[i], '.', fixed = T)[[1]],1  )
     download.file(url = links[i], destfile = paste0('pictures/birds_', i,'.', extension))
-  }, eror=function(e){
+  }, error=function(e){
     print(e)
   })
 
@@ -37,7 +37,7 @@ for (i in 1:10) {
   tryCatch({
     extension <- tail(strsplit(links[i], '.', fixed = T)[[1]],1  )
     download.file(url = links[i], destfile = paste0('pictures/bikes_', i,'.', extension))
-  }, eror=function(e){
+  }, error=function(e){
     print(e)
   })
 }
@@ -57,7 +57,7 @@ for (i in 1:10) {
   tryCatch({
     extension <- tail(strsplit(links[i], '.', fixed = T)[[1]],1  )
     download.file(url = links[i], destfile = paste0('pictures/',keyword,'_', i,'.', extension))  
-  }, eror=function(e){
+  }, error=function(e){
     print(e)
   })
   
